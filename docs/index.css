@@ -1,0 +1,174 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 6px 110px;
+    border: 4px solid #ffffff;
+    border-radius: 30px;
+}
+
+.card {
+    color: #ffffff;
+    display: flex;
+    padding: 2%;
+    box-sizing: border-box;
+    height: 88vh;
+    margin: 6vh;
+    border-radius: 40px;
+}
+
+#pijl2  {
+    border: none;
+    padding: 0;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+#red  {
+    background-color: #FE3E3E;
+    box-shadow: 0px 0px 20px 6px #F9DCDC;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+#blue  {
+    background-color: #35DED6;
+    box-shadow: 0px 0px 20px 6px #DCF8F9;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#icons  {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin: auto 0;
+}
+
+#about  {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about p {
+    font-size: 30px;
+}
+
+.card h1 {
+    font-size: 4em;
+    margin-top:3vh
+}
+
+#about a {
+   margin: 0 auto;
+   text-align: center;
+}
+
+#red nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#red nav a {
+    margin:  auto 0;
+}
+
+#red nav img {
+    width: 5vw;
+}
+
+#leden {
+    box-shadow: 0px 0px 20px 6px #DCF8F9;
+    color: #35DED6;
+    display: flex;
+    flex-direction: column;
+}
+
+#leden h1  {
+    padding-left: 2%;
+}
+
+#leden .personen {
+    display: flex;
+    /* justify-content: space-between; */
+    
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.personen  {
+    padding: 2%;
+    padding-bottom: 0;
+}
+
+#leden .persoon  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #35DED6;
+    border-radius: 40px;
+    width: 9vw;
+    margin-right: 4%;
+    height: 29vh;
+    box-shadow: 0px 0px 20px 6px #DCF8F9;
+    text-align: center;
+    
+}
+
+.overflow img {
+    width: 100%;
+    padding: auto;
+    height: 100%;
+    
+}
+
+/* 
+https://www.w3schools.com/cssref/pr_pos_overflow.asp
+WEB I 
+*/
+.overflow {
+    /* border: 1px solid white; */
+    border-radius: 510px;
+    overflow: hidden;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.name  {
+    font-size: 26px;
+}
+
+.funnctie  {
+    font-size: 21px;
+}
+
+
+
+
+svg{
+    width: 70px;
+    height: 70px;
+}
+
+/* https://pretagteam.com/question/changing-svg-image-color-with-javascript */
+#pijl svg path{
+    stroke: white;
+}
+
+/* https://pretagteam.com/question/changing-svg-image-color-with-javascript */
+#icons svg path{
+    fill: white;
+}
+
