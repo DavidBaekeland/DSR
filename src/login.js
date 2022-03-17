@@ -1,3 +1,6 @@
+const bcrypt = require('bcrypt');
+const saltRounds = 14;
+
 async function getUser(user)  {
     console.log(user);
     let resp = await fetch(`https://web2-backend-davidbaekeland.herokuapp.com/user`, {

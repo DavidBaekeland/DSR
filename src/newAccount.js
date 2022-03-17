@@ -1,3 +1,7 @@
+// const bcrypt = require('bcrypt');
+// import bcrypt from '../node_modules/bcrypt';
+// const saltRounds = 14;
+
 window.onload = () =>  {
     // Already an account
     document.getElementById("oldAccount").addEventListener("click", () => {
@@ -29,13 +33,29 @@ window.onload = () =>  {
 
     async function postUser(user)  {
         console.log(user);
-        let resp = await fetch(`https://web2-backend-davidbaekeland.herokuapp.com/newUser`, {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(user)
-        });
-        return await resp.json();
+
+        // bcrypt.genSalt(saltRounds, async function(err, salt) {
+        //     bcrypt.hash(user.password, salt, async function(err, hash) {
+        //         // Store hash in your password DB.
+        //         console.log(hash);
+
+                let resp = await fetch(`https://web2-backend-davidbaekeland.herokuapp.com/newUser`, {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: user.email,
+                        password: hash,
+                        department: user.department
+                    })
+                });
+
+                return await resp.json();
+        //     });
+        // });
+
+        
+        
     }
 }
